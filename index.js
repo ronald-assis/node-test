@@ -12,9 +12,31 @@ object = {
 
 */
 
+const validateChacacter = ({body, password}) => {
+  const LINIT_CHARACTER = 5;
+  if (body.email.length > LINIT_CHARACTER && body.password.length > LINIT_CHARACTER) {
+    return true
+  }
+  return false;
+}
+
+
+const validateValue = ({body, password}) => {
+  if (body.email !== undefined && body.password !== undefined) {
+    return true;
+  }
+  return false;
+}
 
 const main = (object) => {
-  console.log('test');
+  const character = validateChacacter(object);
+  const value = validateValue(object);
+
+  if ( character && value) {
+    return true
+  }
+
+  return false
 };
 
 module.exports = main;
