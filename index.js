@@ -14,6 +14,8 @@ object = {
 
 
 const main = (object) => {
+  const re = /\S+@\S+\.\S+/;
+  return re.test(object);
 
 };
 
