@@ -14,7 +14,7 @@ object = {
 
 
 const main = (object) => {
-
+  console.log('test');
 };
 
 module.exports = main;
