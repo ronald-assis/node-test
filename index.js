@@ -1,4 +1,4 @@
-// object = { body: { email, password }}
+// object = { body: { email, password }};
 
 const main = (object) => {
 
