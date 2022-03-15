@@ -19,13 +19,3 @@ const main = (object) => {
 };
 
 module.exports = main;
-
-
-const main = (object) => {
-
-  const { body } = object;
-  if (body?.email?.length > 6 && body?.password?.length > 6) return true;
-  return false;
-};
-
-module.exports = main; 
