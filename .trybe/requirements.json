@@ -1,0 +1,9 @@
+{
+    "requirements": [
+      {
+        "description": "Name of the group",
+        "bonus": false
+      }
+    ]
+  }
+  
