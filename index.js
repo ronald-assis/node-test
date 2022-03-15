@@ -13,9 +13,9 @@ object = {
 
 
 const main = (object) => {
-  const re = /\S+@\S+\.\S+/;
-  return re.test(object);
-
+  const { body } = object;
+  const { email, password } = body;
+  return email && password && email.length > 5 && password.length > 5 ? true : false;
 };
 
 module.exports = main;
