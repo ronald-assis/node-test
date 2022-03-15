@@ -5,7 +5,6 @@ const WRONG_ANSWER_GRADE = 1;
 
 const githubUsername = process.env.PR_AUTHOR_USERNAME || 'no_actor';
 const githubRepositoryName = process.env.GITHUB_REPOSITORY || 'no_repository';
-console.log(process.env);
 
 const jestOuputFile = fs.readFileSync(process.argv[2]);
 const { testResults } = JSON.parse(jestOuputFile);
