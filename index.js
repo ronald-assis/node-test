@@ -14,7 +14,10 @@ object = {
 
 
 const main = (object) => {
-
-};
+  const { body: { email, password }} = object;
+  if (email === null && object.body === null) return false;
+  if (email.length > 5 && password.length > 5) return true
+  return false;
+}
 
 module.exports = main;
