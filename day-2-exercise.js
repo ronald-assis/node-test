@@ -14,8 +14,27 @@ param = {
 `main` retorna `false` com o paràmetro acima;
 */
 
-const main = (param) => {
+
+const param = {
+  body: [
+    { name: 'string', quantity: 1 },
+    { name: 'outra string', quantity: 0 },
+    { name: 0, quantity: 21 },
+    { name: NaN, quantity: -1 }
+  ]
+}
+
+const main = ({body}) => {
+  const isAString = body.some(({name}) => typeof name === 'string');
+  const isGreaterThanZero = body.some(({quantity}) => quantity >= 0); 
+
+  if (isAString && isGreaterThanZero) return true;
+
+  return false;
 
 };
 
+console.log(main(param));
+
+main(param)
 module.exports = main;
