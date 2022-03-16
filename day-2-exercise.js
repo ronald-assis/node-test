@@ -1,6 +1,6 @@
 /* 
 A função `main` recebe um objeto como parâmetro, como abaixo. 
-Ela deve retornar um booleano (true e false): forma que seja `true` caso **todos** os objetos dentro do array `body` tenham a propriedade `name` do tipo `string` e `quantity` seja maior que 0, caso contrário `main` retorna `false`.
+Ela deve retornar um booleano (true ou false): forma que seja `true` caso **todos** os objetos dentro do array `body` tenham a propriedade `name` do tipo `string` e `quantity` seja maior que 0, caso contrário `main` retorna `false`.
 
 param = {
   body: [
