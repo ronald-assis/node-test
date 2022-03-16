@@ -10,7 +10,7 @@ param = {
     { name: NaN, quantity: -1 }
   ]
 }
-retorna [true, false, false, false]
+retorna false
 */
 
 const main = (param) => {
