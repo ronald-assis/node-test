@@ -9,13 +9,13 @@ describe('Manipulando objetos', () => {
     });
 
     it('should main return false when email empty', () => {
-        const input = { body: { password: 'asdhaskjdha' } }
+        const input = { body: { password: 'asdhaskjdha', email: null } }
         const result = main(input);
         expect(result).toBe(false);
     });
 
     it('should main return false password empty', () => {
-        const input = { body: { email: 'dsihfkjdsahfalkjsdhf', } }
+        const input = { body: { email: 'dsihfkjdsahfalkjsdhf', password: null } }
         const result = main(input);
         expect(result).toBe(false);
     });
