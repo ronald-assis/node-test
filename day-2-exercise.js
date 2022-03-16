@@ -36,5 +36,5 @@ const main = ({body}) => {
 
 console.log(main(param));
 
-main(param)
+// main(param)
 module.exports = main;
