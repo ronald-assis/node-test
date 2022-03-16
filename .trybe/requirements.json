@@ -1,7 +1,11 @@
 {
     "requirements": [
       {
-        "description": "Name of the group",
+        "description": "Manipulando objetos",
+        "bonus": false
+      },
+      {
+        "description": "High Order Functions",
         "bonus": false
       }
     ]
