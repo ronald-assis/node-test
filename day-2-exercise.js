@@ -1,5 +1,5 @@
 /* 
-Dada a função `main` que recebe um parâmetro, como abaixo, verifique se todos os objetos do array dentro de body possuem a propriedade `name` como uma `string` e quantidade é um número maior que zero.
+Dada a função `main` que recebe um objeto como parâmetro, como abaixo, verifique se todos os objetos dentro de `body` possuem as propriedades `name` do tipo `string` e `quantity` é um número maior que zero.
 Sua função `main` deve retornar um booleano (true e false), `true` caso **todos** os objetos dentro do array `body` tenham `name` como string e `quantity` seja maior que 0.
 
 param = {
@@ -10,7 +10,8 @@ param = {
     { name: NaN, quantity: -1 }
   ]
 }
-retorna false
+
+main retorna `false`
 */
 
 const main = (param) => {
