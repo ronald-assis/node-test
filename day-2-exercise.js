@@ -13,13 +13,8 @@ param = {
 retorna [true, false, false, false]
 */
 
-const callback = (objeto) => {
-  return typeof objeto.name === 'string' && objeto.quantity > 0 
-} 
-
 const main = (param) => {
-  return param.body.every(callback)
-};
 
+};
 
 module.exports = main;
