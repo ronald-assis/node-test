@@ -1,6 +1,6 @@
 /* 
-Dada a função `main` que recebe um objeto como parâmetro, como abaixo, verifique se todos os objetos dentro de `body` possuem as propriedades `name` do tipo `string` e `quantity` é um número maior que zero.
-Sua função `main` deve retornar um booleano (true e false), `true` caso **todos** os objetos dentro do array `body` tenham `name` como string e `quantity` seja maior que 0.
+A função `main` recebe um objeto como parâmetro, como abaixo. 
+Ela deve retornar um booleano (true e false): forma que seja `true` caso **todos** os objetos dentro do array `body` tenham a propriedade `name` do tipo `string` e `quantity` seja maior que 0, caso contrário `main` retorna `false`.
 
 param = {
   body: [
@@ -11,7 +11,7 @@ param = {
   ]
 }
 
-main retorna `false`
+`main` retorna `false` com o paràmetro acima;
 */
 
 const main = (param) => {
