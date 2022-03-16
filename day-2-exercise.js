@@ -25,10 +25,10 @@ const param = {
 }
 
 const main = ({body}) => {
-  const isAString = body.some(({name}) => typeof name === 'string');
-  const isGreaterThanZero = body.some(({quantity}) => quantity >= 0); 
+  const isNotAString = body.some(({name}) => typeof name !== 'string');
+  const lessThanZero = body.some(({quantity}) => quantity <= 0); 
 
-  if (isAString && isGreaterThanZero) return true;
+  if (!isNotAString && !lessThanZero) return true;
 
   return false;
 
